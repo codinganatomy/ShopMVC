@@ -1,8 +1,7 @@
 # ShopMVC
 
 ## Overview
-ShopMVC is a MVC web application designed to explain the MVC pattern of ASP.NET core. This project leverages the power of .NET 9 to deliver a modern,
-responsive, and efficient application.
+ShopMVC is a MVC web application designed to explain the MVC pattern of ASP.NET core. This project leverages the power of .NET 9 to deliver a modern, responsive, and efficient e-commerce platform.
 
 ## Features
 - **User Authentication**: Secure login and registration system.
