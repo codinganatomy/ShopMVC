@@ -30,5 +30,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+//app.MapControllerRoute(
+//    name: "blog",
+//    pattern: "blog/{year}/{month}/{day}/{slug}",
+//    defaults: new { controller = "Blog", action = "Post" },
+//    constraints: new { year = @"\d{4}", month = @"\d{2}", day = @"\d{2}" }
+//);
+
 
 app.Run();

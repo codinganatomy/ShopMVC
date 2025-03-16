@@ -10,6 +10,7 @@ using ShopMVC.Models;
 
 namespace ShopMVC.Controllers
 {
+    [Route("products")]
     public class ProductsController : Controller
     {
         private readonly ShopMVCContext _context;
@@ -20,12 +21,14 @@ namespace ShopMVC.Controllers
         }
 
         // GET: Products
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Product.ToListAsync());
         }
 
-        // GET: Products/Details/5
+        // GET: Products/Details/
+        [HttpGet("{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
